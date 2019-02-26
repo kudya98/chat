@@ -1,0 +1,129 @@
+html,body,#root,.login-form{
+  width:100%;
+  height:100%;
+  margin:0;
+}
+.login-form,.registration-form{
+  font-size: 1.2em;
+  text-align: center;
+  width:25%;
+  min-width:400px;
+  height:auto;
+  margin:100px auto;
+  border:1px solid black;
+}
+.login-form>input,.registration-form>input {
+  box-sizing: border-box;
+  width:100%;
+  padding:10px 0;
+}
+.login-form>button,.registration-form>button {
+  padding:10px 0;
+  width:50%;
+}
+.chat{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap: wrap;
+}
+.left-bar{
+  width:16%;
+  height: 95%;
+}
+.log-window{
+  height: 20%;
+  width:100%;
+  background-color: #dddddd;
+  overflow:auto;
+}
+.users{
+  font-size: 1.2em;
+  color:white;
+  width:100%;
+  height:80%;
+  overflow:auto;
+  background-color: darkcyan;
+}
+.user{
+  padding:8px 0;
+  word-break: break-all;
+}
+.user.client{
+  text-align:center;
+  background-color:black;
+  color:white;
+  border-bottom:none;
+}
+.chat-window{
+  box-sizing: border-box;
+  width:84%;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height:95%;
+  overflow:auto;
+  padding:0 0 50px 0;
+  background-color: #eeffff;
+}
+.message{
+  font-size:1.2em;
+  border:2px solid blue;
+  padding:10px;
+  margin: 20px 2% 0px 2%;
+  max-width:500px;
+  background-color: white;
+  /*background-color: #dfffdd;*/
+}
+.message.client{
+  align-self: flex-start;
+  background-color: lawngreen;
+}
+.message.client>.message-sender{
+  display:none;
+}
+.message.log{
+  color:black;
+  padding:5px;
+  margin: 5px 0 0 0;
+  align-self: center;
+  background-color:inherit;
+  border:none;
+  font-size:1em;
+}
+.message-sender{
+  color:blue;
+  word-break: break-all;
+}
+.message-content{
+  word-break: break-all;
+}
+
+.message-form{
+  width:100%;
+  height:5%;
+  display:flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.message-form>input{
+
+  width:100%;
+  font-size: 2em;
+  height:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color:#dddddd;
+}
+.message-form>button{
+  font-size: 1.7em;
+  width:220px;
+  max-width:50%;
+  height:100%;
+}
+@media screen and (max-width: 600px) {
+  .left-bar{
+    display:none;
+  }
+}
