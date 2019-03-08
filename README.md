@@ -1,3 +1,4 @@
 # chat
-Socket.io chat with authentication(MySQL)
+Socket.io chat  
+authentication: MySQL
 ![screenshot](image1.png)
